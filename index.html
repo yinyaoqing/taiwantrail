@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="台灣森林步道">
+    <meta name="keyword" content="台灣森林步道,森林步道,登山,步道">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <meta property="og:title" content="台灣森林步道">
+    <meta property="og:description" content="台灣森林步道一覽">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="http://cdn.pickupimage.com/data/photo/2014/4/7/Dolly-Sods-Beautiful-Stream-Forest-WV-040714A27A32AB2F.jpg">
+
+    <link rel="shortcut icon" href="img/Trail.ico" class="icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <title>台灣森林步道</title>
+</head>
+
+<body>
+    <div id="carousel" class="carousel slide position-relative" data-ride="carousel">
+        <div class="carousel-inner position-relative">
+            <div class="carousel-item banner-carousel-item bg-cover active" style="background-image:url(https://upload.cc/i1/2018/11/21/Tr0GMU.jpg)">
+            </div>
+            <div class="carousel-item banner-carousel-item bg-cover" style="background-image:url(https://upload.cc/i1/2018/11/21/sXU3ra.jpg)">
+            </div>
+            <div class="carousel-item banner-carousel-item bg-cover" style="background-image:url(https://upload.cc/i1/2018/11/21/uEUzx4.jpg)">
+            </div>
+        </div>
+        <div class="title-box position-absolute bg-color-light p-5 mx-auto text-center rounded d-flex flex-column justify-content-center">
+            <h1 class="display-4 mb-4">台灣森林步道</h1>
+            <select class="form-control w-100 mx-auto ">
+                <option>--所有行政區--</option>
+                <option>宜蘭縣</option>
+                <option>新北市</option>
+                <option>桃園縣</option>
+                <option>新竹縣</option>
+                <option>苗栗縣</option>
+                <option>台中市</option>
+                <option>南投縣</option>
+                <option>花蓮縣</option>
+                <option>彰化縣</option>
+                <option>雲林縣</option>
+                <option>嘉義縣</option>
+                <option>台南市</option>
+                <option>屏東縣</option>
+                <option>高雄市</option>
+                <option>台東縣</option>
+            </select>
+        </div>
+        <div class="level-box container position-absolute ">
+            <div class="row">
+                <div class="col-md-10 rounded shadow p-4 mx-auto bg-white">
+                    <h3 class="mb-3">步道等級</h3>
+                    <ul class="nav nav-pills mb-3 d-flex justify-content-around" id="pills-tab" role="tablist">
+                        <li class="nav-item ">
+                            <a class="nav-link btn-outline-primary font-weight-bold active" id="nationalLevel" data-toggle="pill" href="#pillsNational"
+                                role="tab" aria-controls="pills-national" aria-selected="true">國家級步道</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-info font-weight-bold" id="regionalLevel" data-toggle="pill" href="#pillsRegional" role="tab"
+                                aria-controls="pills-regional" aria-selected="false">區域級步道</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-secondary font-weight-bold" id="else" data-toggle="pill" href="#pillsOthers" role="tab"
+                                aria-controls="pills-others" aria-selected="false">其他</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="hr mt-5">
+        <span class="d-inline-block w-40 border-bottom align-middle border-dark"></span>
+        <span class="fas fa-chevron-circle-down d-inline-block align-middle" aria-hidden="true"></span>
+        <span class="d-inline-block w-40 border-bottom align-middle border-dark"></span>
+    </div>
+
+    <div class="container contentBox">
+        <div class="cityName">
+            <h3 class="mt-5 text-primary text-center font-weight-bold">步道列表</h3>
+        </div>
+        
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pillsNational" role="tabpanel" aria-labelledby="pills-national-tab">
+                <div class="row py-5 loadingPositionNational">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pillsRegional" role="tabpanel" aria-labelledby="pills-regional-tab">
+                <div class="row py-5 loadingPositionRegional">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pillsOthers" role="tabpanel" aria-labelledby="pills-others-tab">
+                <div class="row py-5 loadingPositionOthers">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="p-4 mt-3 bg-secondary text-center text-light">
+        <h5 class="mb-3">台灣森林步道</h5>
+        <p>資料來源：政府資料開放平台、台灣山林悠遊網</p>
+    </footer>
+
+
+    <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mapModalLabel">Map</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78241.47613569732!2d121.71121403305345!3d24.274132442884852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467d34ac75d53a3%3A0xd4065629342fa141!2z6JiH6Iqx5Y-k6YGT!5e0!3m2!1szh-TW!2stw!4v1543199498632"
+                        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

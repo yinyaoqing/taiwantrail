@@ -1,0 +1,63 @@
+.banner-carousel-item {
+  height: 450px;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-color-light {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.bg-color-dark {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.title-box {
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (max-width: 576px) {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(0);
+   
+  }
+  select {
+    border: 2px solid;
+  }
+}
+
+.btn {
+  border: 2px solid;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.level-box {
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.space {
+  height: 100px;
+}
+
+.hr {
+  text-align: center;
+}
+
+.card-body{
+    z-index: 100;
+}
+
+.cardHide{
+  display: none;
+}
